@@ -6,11 +6,11 @@ SHELL := /bin/bash
 export PATH := ./node_modules/.bin:$(PATH)
 
 deploy:
-	@serverless deploy --verbose --region eu-west-1 --stage dev
+	@serverless deploy --verbose --region eu-west-1 --stage prod
 	@serverless s3deploy
 
 s3deploy:
 	@serverless s3deploy
 
 tidy:
-	@serverless remove --verbose --region eu-west-1 --stage dev
+	@serverless remove --verbose --region eu-west-1 --stage prod

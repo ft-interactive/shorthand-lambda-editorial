@@ -1,10 +1,10 @@
-service: ft-shorthand-ceros-publishing
+service: ft-ig-shorthand-publishing
 
 frameworkVersion: ">=1.1.0 <2.0.0"
 
 provider:
   name: aws
-  runtime: nodejs4.3
+  runtime: nodejs6.10
   role: ${env:AWS_ROLE}
   iamRoleStatements:
     -  Effect: "Allow"
@@ -13,7 +13,7 @@ provider:
        Resource:
          Fn::Join:
            - ""
-           - - "arn:aws:s3:::ft-shorthand-staging"
+           - - "arn:aws:s3:::ft-ig-shorthand-editorial-incoming"
   deploymentBucket: ${env:AWS_DEPLOYMENT_BUCKET}
   environment:
     SOURCE_BUCKET: ${env:AWS_STAGING_BUCKET}

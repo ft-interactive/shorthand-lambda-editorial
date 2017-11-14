@@ -1,9 +1,8 @@
 {
-  "name": "ft-shorthand-lambda",
+  "name": "shorthand-lambda-editorial",
   "version": "1.0.0",
   "description": "Lambda functions for decorating Shorthand & Ceros articles",
   "authors": [
-    "Andrew Georgiou",
     "Ændrew Rininsland"
   ],
   "license": "MIT",
@@ -47,6 +46,6 @@
     "serverless-external-s3-event": "^1.0.4",
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0",
-    "xo": "^0.17.1"
+    "xo": "^0.18.2"
   }
 }

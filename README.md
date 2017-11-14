@@ -1,4 +1,4 @@
-# Shorthand Lambda
+# Shorthand Lambda (Editorial fork)
 #### _2017 Ændrew Rininsland and Andrew Georgiou, Financial Times_
 
 > Serverless project for deploying Shorthand and Ceros content

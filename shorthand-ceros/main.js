@@ -31,7 +31,7 @@ function pipeline(body, item, cb) {
   if (args.uuid) { // Editorial project
     const withComments = comments($, args);
     const withTracking = oTracking(withComments, args);
-    // rest of editorial pipeline...
+    // Rest of editorial pipeline...
     utils.deploy(item, withTracking.html())
       .then(key => {
         cb(null, `Deployed to: ${resultBase}${key}`);

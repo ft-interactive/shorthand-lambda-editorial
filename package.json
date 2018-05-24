@@ -34,6 +34,7 @@
     "aws-sdk": "^2.22.0",
     "axios": "^0.15.3",
     "cheerio": "^0.22.0",
+    "moment": "^2.22.1",
     "uuid": "^2.0.3"
   },
   "devDependencies": {
